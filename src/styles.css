@@ -1,0 +1,76 @@
+.white-bg {
+  background-color: white;
+}
+
+.feat,
+.ures {
+  transition: transform 1s ease;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  top: 2rem;
+  z-index: 2;
+}
+
+.feat {
+  transform: translateX(100%);
+  left: 0;
+}
+
+.ures {
+  transform: translateX(-100%);
+  right: 0;
+}
+
+.bump-active.feat {
+  transform: translateX(100%);
+}
+
+.bump-active.ures {
+  transform: translateX(100%);
+}
+
+.card {
+  position: relative;
+  margin-right: 80px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+  max-width: 240px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 2rem;
+  background-color: black;
+}
+
+.stringLine {
+  position: relative;
+  border-top: 3px solid black;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 2rem;
+}
+
+.stringLine::-webkit-scrollbar {
+  display: none;
+}
+
+.section-img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  margin-left: 50px;
+}
